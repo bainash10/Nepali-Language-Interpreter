@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepali Programming Language Console</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">Nepali Programming Language Console</div>
+        <div class="editor">
+            <form method="post">
+                <input type="text" name="command" class="command-input" placeholder="Enter command">
+                <input type="submit" value="Run" class="command-input">
+            </form>
+        </div>
+        <div class="command-output">
+            {{ result }}
+        </div>
+        <div class="footer">
+            <p>Developed by Nischal Baidar</p>
+        </div>
+    </div>
+    <div class="help">
+        <h3>Usage Instructions:</h3>
+        <ul>
+            <li><strong>dekhau "message"</strong>: Print a message.</li>
+            <li><strong>manau a = 10</strong>: Assign a value to a variable.</li>
+            <li><strong>joda(a, b)</strong>: Add two numbers.</li>
+            <li><strong>ghatau(a, b)</strong>: Subtract two numbers.</li>
+            <li><strong>guna(a, b)</strong>: Multiply two numbers.</li>
+            <li><strong>bhaglagau(a, b)</strong>: Divide two numbers.</li>
+            <li><strong>madat</strong>: Show help information.</li>
+        </ul>
+    </div>
+</body>
+</html>
