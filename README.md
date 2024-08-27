@@ -18,8 +18,3 @@ This project is a simple web-based interpreter for a programming language with c
 - `bhaglagau <a> <b>`: Divide two numbers.
 - `madat`: Show help information.
 
-## Running the Application
-
-1. Install Flask if you haven't already:
-   ```bash
-   pip install Flask
